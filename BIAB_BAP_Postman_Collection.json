@@ -1,0 +1,992 @@
+{
+  "info": {
+    "_postman_id": "056addd3-b20f-47dc-beac-cb701b839f09",
+    "name": "BIAB BAP APIs -multi bbp-v2",
+    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Client",
+      "item": [
+        {
+          "name": "Search",
+          "item": [
+            {
+              "name": "By Item and Location",
+              "id": "ab52befa-165e-4bed-b263-253421e85d89",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {},\n    \"message\": {\n        \"criteria\": {\n            \"delivery_location\": \"12.9063433,77.5856825\",\n            \"search_string\": \"banana\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v1/search"
+              },
+              "response": []
+            },
+            {
+              "name": "Mandi - By Provider & BPP",
+              "id": "7459bc07-6acc-42b3-a4e6-dd3f2c7680ad",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"bpp_id\": \"https://mandi.succinct.in/bpp\"\n    },\n    \"message\": {\n        \"criteria\": {\n            \"search_string\": \"Orange\",\n            \"delivery_location\": \"12.903561,77.5939631\",\n            \"provider_id\": \"./retail.kirana/ind.blr/84@mandi.succinct.in.provider\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v1/search"
+              },
+              "response": []
+            },
+            {
+              "name": "Magento - By Provider & BPP",
+              "id": "304d79b1-64b1-4955-9119-b204d28843c5",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \"bpp_id\": \"https://mandi.succinct.in/bpp\"\n    },\n    \"message\": {\n        \"criteria\": {\n            \"search_string\": \"Orange\",\n            \"delivery_location\": \"12.903561,77.5939631\",\n            \"provider_id\": \"./retail.kirana/ind.blr/84@mandi.succinct.in.provider\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v1/search"
+              },
+              "response": []
+            },
+            {
+              "name": "Mandi - By Provider",
+              "id": "c1913957-6b1a-4c87-bc48-5504041dbde6",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {},\n    \"message\": {\n        \"criteria\": {\n            \"delivery_location\": \"12.9259,77.583\",\n            \"provider_id\": \"./retail.kirana/ind.blr/84@mandi.succinct.in.provider\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v1/search",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v1",
+                    "search"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "fruits",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Peppo - By Provider",
+              "id": "6cce1e13-7b8c-4ecf-948b-d4fa259955d1",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {},\n    \"message\": {\n        \"criteria\": {\n            \"delivery_location\": \"12.9259,77.583\",\n            \"provider_id\": \"tulsidev\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v1/search",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v1",
+                    "search"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "fruits",
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Magento BPP - By Item and Location",
+              "id": "947db359-1ea6-429b-b16d-66163c211170",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n    \"context\": {\n        \n    },\n    \"message\": {\n        \"criteria\": {\n            \"search_string\": \"shoe\",\n            \"delivery_location\": \"12.9063433,77.5856825\"\n        }\n    }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v1/search?searchString=shoe&location=12.9063433,77.5856825",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v1",
+                    "search"
+                  ],
+                  "query": [
+                    {
+                      "key": "searchString",
+                      "value": "shoe"
+                    },
+                    {
+                      "key": "location",
+                      "value": "12.9063433,77.5856825"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "OnSearch",
+              "id": "dcc8df85-8d88-4772-982f-ccb58c2ef06e",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/client/v1/on_search?messageId=3ca263bc-b2cf-4a3d-a15f-174a3ecb94e5",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v1",
+                    "on_search"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageId",
+                      "value": "3ca263bc-b2cf-4a3d-a15f-174a3ecb94e5"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "eaedb77a-95c1-4f21-a661-4ede0ec0ab0e"
+        },
+        {
+          "name": "Quote",
+          "item": [
+            {
+              "name": "Mandi - Get Quote",
+              "id": "58ebe8d0-a005-4e86-a0f8-230fa4d4a93c",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n     {\n        \"context\": {\n        },\n        \"message\": {\n            \"cart\": {\n                \"items\": [\n                    {\n                        \"id\": \"4847-OrderEasy-10002-72U79\",\n                        \"quantity\": {\n                            \"count\": 1\n                        },\n                        \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                        \"provider\": {\n                            \"id\": \"4847-OrderEasy-10002\",\n                            \"locations\": [\n                                \"A2B restaurant_LOCATION\"\n                            ]\n                        }\n                    },\n                     {\n                        \"id\": \"4847-OrderEasy-10002-72U410\",\n                        \"quantity\": {\n                            \"count\": 1\n                        },\n                        \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                        \"provider\": {\n                            \"id\": \"4847-OrderEasy-10002\",\n                            \"locations\": [\n                                \"A2B restaurant_LOCATION\"\n                            ]\n                        }\n                    }\n                ]\n            }\n        }\n    },{\n        \"context\": {\n        },\n        \"message\": {\n            \"cart\": {\n                \"items\": [\n                    {\n                        \"id\": \"G-0007\",\n                        \"quantity\": {\n                            \"count\": 1\n                        },\n                        \"bpp_id\": \"bpp1.beckn.org\",\n                        \"provider\": {\n                            \"id\": \"453678\",\n                            \"locations\": [\n                                \"el\"\n                            ]\n                        }\n                    }\n                ]\n            }\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/get_quote"
+              },
+              "response": []
+            },
+            {
+              "name": "On Get Quote",
+              "id": "9d75c663-ac56-4182-ae92-da698b36d68d",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_get_quote?messageIds=2af62290-e285-4258-8151-068c6a9181d1,780955ef-1783-4227-b5e3-d9ff264971e3",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_get_quote"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "2af62290-e285-4258-8151-068c6a9181d1,780955ef-1783-4227-b5e3-d9ff264971e3"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "2bb360e2-967d-4fdd-99ac-68be6b4ab038"
+        },
+        {
+          "name": "Initialize",
+          "item": [
+            {
+              "name": "Mandi - Initialize Order",
+              "id": "114a3cb6-cac5-42c7-936c-f1f2c956c4a9",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"context\": {\n            \"transaction_id\": \"2bcfe3c8-dd89-4803-85b4-29623f88ee22\"\n        },\n        \"message\": {\n            \"items\": [\n                {\n                    \"id\": \"4847-OrderEasy-10002-72U79\",\n                    \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                    \"provider\": {\n                        \"id\": \"4847-OrderEasy-10002-3012\",\n                        \"locations\": [\n                            \"4847-OrderEasy-10002-3012_location\"\n                        ]\n                    }\n                },\n                {\n                    \"id\": \"4847-OrderEasy-10002-72U410\",\n                     \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                    \"provider\": {\n                        \"id\": \"4847-OrderEasy-10002-3012\",\n                        \"locations\": [\n                            \"4847-OrderEasy-10002-3012_location\"\n                        ]\n                    }\n                }\n            ],\n            \"billing_info\": {\n                \"address\": {\n                    \"door\": \"Landmark\",\n                    \"country\": \"IND\",\n                    \"city\": \"Bengaluru\",\n                    \"street\": \"Test Address\",\n                    \"area_code\": \"560078\",\n                    \"state\": \"Karnataka\",\n                    \"building\": \"Test Building\"\n                },\n                \"phone\": \"9876543210\",\n                \"name\": \"Nirmal\",\n                \"email\": \"\"\n            },\n            \"delivery_info\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"name\": \"Nirmal\",\n                \"phone\": \"9876543210\",\n                \"email\": \"\",\n                \"location\": {\n                    \"address\": {\n                        \"door\": \"Landmark\",\n                        \"country\": \"IND\",\n                        \"city\": \"Bengaluru\",\n                        \"street\": \"Test Address\",\n                        \"area_code\": \"560078\",\n                        \"state\": \"Karnataka\",\n                        \"building\": \"Test Building\"\n                    },\n                    \"gps\": \"12.9063433,77.5856825\"\n                }\n            }\n        }\n    },\n    {\n        \"context\": {\n            \"transaction_id\": \"9946f6a5-1476-4dd7-8592-16054e6e95b3\"\n        },\n        \"message\": {\n            \"items\": [\n                {\n                    \"id\": \"G-0007\",\n                    \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"bpp1.beckn.org\",\n                    \"provider\": {\n                        \"id\": \"453678\",\n                        \"locations\": [\n                            \"el\"\n                        ]\n                    }\n                }\n            ],\n            \"billing_info\": {\n                \"address\": {\n                    \"door\": \"Landmark\",\n                    \"country\": \"IND\",\n                    \"city\": \"Bengaluru\",\n                    \"street\": \"Test Address\",\n                    \"area_code\": \"560078\",\n                    \"state\": \"Karnataka\",\n                    \"building\": \"Test Building\"\n                },\n                \"phone\": \"9876543210\",\n                \"name\": \"Nirmal\",\n                \"email\": \"\"\n            },\n            \"delivery_info\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"name\": \"Nirmal\",\n                \"phone\": \"9876543210\",\n                \"email\": \"\",\n                \"location\": {\n                    \"address\": {\n                        \"door\": \"Landmark\",\n                        \"country\": \"IND\",\n                        \"city\": \"Bengaluru\",\n                        \"street\": \"Test Address\",\n                        \"area_code\": \"560078\",\n                        \"state\": \"Karnataka\",\n                        \"building\": \"Test Building\"\n                    },\n                    \"gps\": \"12.9063433,77.5856825\"\n                }\n            }\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/initialize_order"
+              },
+              "response": []
+            },
+            {
+              "name": "On Initialize order",
+              "id": "171ad280-1d01-4dd7-921f-3ad2300bcaf5",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_initialize_order?messageIds=3508d5cc-8b59-4724-b0b6-f2467d2a6925,64325966-d052-4dc9-8ec4-2afa35b85092",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_initialize_order"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "3508d5cc-8b59-4724-b0b6-f2467d2a6925,64325966-d052-4dc9-8ec4-2afa35b85092"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "a4bcd600-641e-4fac-966f-859d6de1385f"
+        },
+        {
+          "name": "Confirm",
+          "item": [
+            {
+              "name": "Client confirm_order",
+              "id": "28004057-148c-4d16-a103-753dc69d1c54",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n     {\n        \"context\": {\n           \"transaction_id\": \"2bcfe3c8-dd89-4803-85b4-29623f88ee22\"\n        },\n        \"message\": {\n            \"items\": [\n                {\n                    \"id\": \"4847-OrderEasy-10002-72U79\",\n                    \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                    \"provider\": {\n                        \"id\": \"4847-OrderEasy-10002-3012\",\n                        \"locations\": [\n                            \"4847-OrderEasy-10002-3012_location\"\n                        ]\n                    }\n                },\n                {\n                    \"id\": \"4847-OrderEasy-10002-72U410\",\n                     \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\",\n                    \"provider\": {\n                        \"id\": \"4847-OrderEasy-10002-3012\",\n                        \"locations\": [\n                            \"4847-OrderEasy-10002-3012_location\"\n                        ]\n                    }\n                }\n            ],\n            \"billing_info\": {\n                \"address\": {\n                    \"door\": \"Landmark\",\n                    \"country\": \"IND\",\n                    \"city\": \"Bengaluru\",\n                    \"street\": \"Test Address\",\n                    \"area_code\": \"560078\",\n                    \"state\": \"Karnataka\",\n                    \"building\": \"Test Building\"\n                },\n                \"phone\": \"9876543210\",\n                \"name\": \"Nirmal\",\n                \"email\": \"\"\n            },\n            \"delivery_info\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"name\": \"Nirmal\",\n                \"phone\": \"9876543210\",\n                \"email\": \"\",\n                \"location\": {\n                    \"address\": {\n                        \"door\": \"Landmark\",\n                        \"country\": \"IND\",\n                        \"city\": \"Bengaluru\",\n                        \"street\": \"Test Address\",\n                        \"area_code\": \"560078\",\n                        \"state\": \"Karnataka\",\n                        \"building\": \"Test Building\"\n                    },\n                    \"gps\": \"12.9063433,77.5856825\"\n                }\n            },\n            \"payment\": {\n                \"paid_amount\": 77,\n                \"status\": \"PAID\",\n                \"transaction_id\": \"e80d54b0-b0ce-45b0-979a-5a0b1414d6de\"\n            }\n        }\n    },{\n        \"context\": {\n             \"transaction_id\": \"9946f6a5-1476-4dd7-8592-16054e6e95b3\"\n        },\n        \"message\": {\n          \"items\": [\n                 {\n                    \"id\": \"G-0007\",\n                    \"quantity\": {\n                        \"count\": 1\n                    },\n                    \"bpp_id\": \"bpp1.beckn.org\",\n                    \"provider\": {\n                        \"id\": \"453678\",\n                        \"locations\": [\n                            \"el\"\n                        ]\n                    }\n                }\n            ],\n            \"billing_info\": {\n                \"address\": {\n                    \"door\": \"Landmark\",\n                    \"country\": \"IND\",\n                    \"city\": \"Bengaluru\",\n                    \"street\": \"Test Address\",\n                    \"area_code\": \"560078\",\n                    \"state\": \"Karnataka\",\n                    \"building\": \"Test Building\"\n                },\n                \"phone\": \"9876543210\",\n                \"name\": \"Nirmal\",\n                \"email\": \"\"\n            },\n            \"delivery_info\": {\n                \"type\": \"HOME-DELIVERY\",\n                \"name\": \"Nirmal\",\n                \"phone\": \"9876543210\",\n                \"email\": \"\",\n                \"location\": {\n                    \"address\": {\n                        \"door\": \"Landmark\",\n                        \"country\": \"IND\",\n                        \"city\": \"Bengaluru\",\n                        \"street\": \"Test Address\",\n                        \"area_code\": \"560078\",\n                        \"state\": \"Karnataka\",\n                        \"building\": \"Test Building\"\n                    },\n                    \"gps\": \"12.9063433,77.5856825\"\n                }\n            },\n            \"payment\": {\n                \"paid_amount\": 77,\n                \"status\": \"PAID\",\n                \"transaction_id\": \"e80d54b0-b0ce-45b0-979a-5a0b1414d6de\"\n            }\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/confirm_order"
+              },
+              "response": []
+            },
+            {
+              "name": "Client on confirm order",
+              "id": "97be1f84-8dd5-46db-9d67-51dbce1aab3a",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_confirm_order?messageIds=1dbbca28-541a-484a-a99f-86d588029265,436e8a0f-eee0-490d-80f5-e7fea8dbb4de",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_confirm_order"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "1dbbca28-541a-484a-a99f-86d588029265,436e8a0f-eee0-490d-80f5-e7fea8dbb4de"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "457fca41-c101-4394-8388-fac7cc28c668"
+        },
+        {
+          "name": "Status",
+          "item": [
+            {
+              "name": "Mandi - Client order_status",
+              "id": "6bc14f2b-5542-4e26-8fda-56c5efad6999",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"context\": {\n            \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\"\n        },\n        \"message\": {\n            \"order_id\": \"5209-OrderEasy-1-1\"\n        }\n    },\n    {\n        \"context\": {\n            \"bpp_id\": \"integration-qa.gofrugalretail.com/ecommerce/ondc\"\n        },\n        \"message\": {\n            \"order_id\": \"4934-OrderEasy-4-2\"\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/order_status"
+              },
+              "response": []
+            },
+            {
+              "name": "Client on order status",
+              "id": "121d8620-e2ad-4ed3-955b-8ce0f74803af",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_order_status?messageIds=50c1e8ce-02c0-462e-a984-92b30e110999",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_order_status"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "50c1e8ce-02c0-462e-a984-92b30e110999"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "e6f69c2d-d318-4789-b6d3-c42ba4aae08c"
+        },
+        {
+          "name": "Track",
+          "item": [
+            {
+              "name": "Peppo - Track Order",
+              "id": "826f58ab-e8ed-477b-8419-c403219b580a",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"context\": {\n            \"transaction_id\": \"75nm6996-69b5-413a-b57e-298e130eb259\",\n            \"bpp_id\": \"https://dev-api.getwalkin.in/beckn-orders-ms-develop/api/local-retail/init\"\n        },\n        \"message\": {\n            \"order_id\": \"\"\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/track"
+              },
+              "response": []
+            },
+            {
+              "name": "Mandi - Track Order",
+              "id": "8efadbfb-7a4f-4841-9084-36438c3809d6",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"context\": {\n            \"transaction_id\": \"d1709314-0d1f-4b63-a1e7-f17e68714147\",\n            \"bpp_id\": \"https://mandi.succinct.in/bpp\"\n        },\n        \"message\": {\n            \"order_id\": \"./retail.kirana/ind.blr/305@mandi.succinct.in.order\"\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/track"
+              },
+              "response": []
+            },
+            {
+              "name": "On Track Order",
+              "id": "9b082bf2-dcaa-405c-b8e0-b3d0b41c7262",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_track?messageIds=ff090ff5-a6df-4c2e-9064-ed14e3efe044",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_track"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "ff090ff5-a6df-4c2e-9064-ed14e3efe044"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "94e87472-714a-4d06-bb3d-a5794a542363"
+        },
+        {
+          "name": "Support",
+          "item": [
+            {
+              "name": "Client Support",
+              "id": "64033f89-a432-4666-9d30-6932dcc38b3b",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\n    {\n        \"context\": {\n            \"bpp_id\": \"https://demo4460370.mockable.io\"\n        },\n        \"message\": {\n            \"uri\": \"https://www.google.com\",\n            \"ref_id\": \"abc123\"\n        }\n    }\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": "{{base_url}}/client/v2/get_support"
+              },
+              "response": []
+            },
+            {
+              "name": "Client On Support",
+              "id": "c4b36a66-c367-4373-b422-b349d74fbdf1",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/client/v2/on_support?messageIds=f104f006-9398-44e4-af6f-b64d4e50a366",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v2",
+                    "on_support"
+                  ],
+                  "query": [
+                    {
+                      "key": "messageIds",
+                      "value": "f104f006-9398-44e4-af6f-b64d4e50a366"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "52f5541a-a77b-4c78-b818-73999a61cd85"
+        },
+        {
+          "name": "Accounts",
+          "item": [
+            {
+              "name": "Delivery Address",
+              "item": [
+                {
+                  "name": "OnDeliveryAddress",
+                  "id": "5719c0c3-eb15-451b-8e30-58813c987045",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{base_url}}/client/v2/delivery_address"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "AddDeliveryAddress",
+                  "id": "02764670-7d8e-4670-9b3d-778d498bfaab",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n   \"descriptor\": {\n       \"name\": \"amazon\",\n       \"short_desc\": \"aflops\"\n   },\n   \"gps\": \"12.910793,77.596316\",\n   \"default\": true,\n   \"address\": {\n                    \"area_code\": \"560071\",\n                    \"building\": \"kp nagar \",\n                    \"city\": \"Karnataka\",\n                    \"country\": \"India\",\n                    \"door\": \"A301 Pride Apartments\",\n                    \"locality\": \"\",\n                    \"state\": \"Karnataka\",\n                    \"street\": \"\"\n                }\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{base_url}}/client/v2/delivery_address"
+                  },
+                  "response": []
+                }
+              ],
+              "id": "c5f120ab-7a64-4127-8118-08dfb8c64de1",
+              "auth": {
+                "type": "bearer",
+                "bearer": {
+                  "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImYwNTM4MmFlMTgxYWJlNjFiOTYwYjA1Yzk3ZmE0MDljNDdhNDQ0ZTciLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vYmVja25hdXRoIiwiYXVkIjoiYmVja25hdXRoIiwiYXV0aF90aW1lIjoxNjM0MzExMjQ0LCJ1c2VyX2lkIjoiOTBQTjNzZDJDbWZjOWhNWmczOEttbURNWjJLMyIsInN1YiI6IjkwUE4zc2QyQ21mYzloTVpnMzhLbW1ETVoySzMiLCJpYXQiOjE2MzQzMTEyNDQsImV4cCI6MTYzNDMxNDg0NCwiZW1haWwiOiJzaW1wbHlyYWphdDAzQGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJzaW1wbHlyYWphdDAzQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.WLf-d0nqx7y5h2oz3SB1Ljkih-9bpUlVNEqMpaB4rJ67jQOYpkP9bAwySzMfuLdEAff-twclJW7nKrtDbnQx802RAmlq3PJZVIQFrRbNb3yUuWW3YIcNyHR05NDH7qFjWn0nylHxTBptxHK03BWPzocXvCfu7i8xCOU-rkVSrxaxjW9S8iIbrbW-2Lnne2kHDszK1V3H0gOHkKW4hTiRDYu3jzMeBtbqYW18r7z7jPcP797gccKwj4YQasMmJnUO8-4BZQlXjAJE-3jg47Wpxb8XhGwDcSzuJNsxv9OlyW-fXSLCeBndFqipYR43xIeL8J-ikbHUtAwAdYTANa6GCg"
+                }
+              },
+              "event": [
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "id": "698d530f-a488-4a9f-9c79-65eae4b4f79e",
+                    "type": "text/javascript",
+                    "exec": [
+                      ""
+                    ]
+                  }
+                },
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "e4c2faae-ed2d-4051-9c51-68306a3d2538",
+                    "type": "text/javascript",
+                    "exec": [
+                      ""
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Billings",
+              "item": [
+                {
+                  "name": "AddBillings",
+                  "id": "26c50dec-5007-4375-b4c0-b46714a352ae",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n   \"name\": \"ABC Colony\",\n   \"organization\": {\n       \"name\": \"amazon.com\",\n       \"cred\": \"amazon pay\"\n   },\n   \"location_id\": \"\",\n   \"address\": {\n       \"door\": \"111\",\n       \"name\": \"ram\",\n       \"building\": \"concorde\",\n       \"street\": \"btm \",\n       \"locality\": \"BTM phase 1\",\n       \"ward\": \"22\",\n       \"city\": \"Bangalore\",\n       \"state\": \"Karnataka\",\n       \"country\": \"India\",\n       \"area_code\": \"1\"\n   },\n   \"email\": \"user@example.com\",\n   \"phone\": \"9828828222\",\n   \"tax_number\": \"122222\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{base_url}}/client/v2/billing_details"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "OnBillingDetails",
+                  "id": "8edfbdce-556d-49f4-a164-c46beda386ce",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{base_url}}/client/v2/billing_details"
+                  },
+                  "response": []
+                }
+              ],
+              "id": "71b0b791-1108-40b3-b909-0fecf934a65f"
+            },
+            {
+              "name": "AccountDetails",
+              "item": [
+                {
+                  "name": "UpdateAccountDetail",
+                  "id": "8c7942a0-f3db-4d10-9103-07e83e757d3d",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n\"user_email\" : \"simplyrajat001@gmail.com\",\n\"user_phone\": \"9898928272\",\n\"user_name\":\"Khanna\"\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": "{{base_url}}/client/v1/account_details"
+                  },
+                  "response": []
+                },
+                {
+                  "name": "GetAccountDetail",
+                  "id": "99717c79-1a0d-49bf-abb9-c74f120921fc",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": {
+                        "token": "{{token}}"
+                      }
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": "{{base_url}}/client/v1/account_details"
+                  },
+                  "response": []
+                }
+              ],
+              "id": "34c2b9bb-4006-4ba5-bf59-e1390bc8ecfe"
+            }
+          ],
+          "id": "509c23dc-4b8c-4f23-8920-fa5f0365fccc"
+        },
+        {
+          "name": "Orders",
+          "item": [
+            {
+              "name": "OnOrders",
+              "id": "dfe0668e-03bf-417f-9edb-cacce5b129d0",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": {
+                    "token": "{{token}}"
+                  }
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/client/v1/orders?orderId=4847-OrderEasy-10002-15",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "client",
+                    "v1",
+                    "orders"
+                  ],
+                  "query": [
+                    {
+                      "key": "orderId",
+                      "value": "4847-OrderEasy-10002-15"
+                    },
+                    {
+                      "key": "skip",
+                      "value": "0",
+                      "disabled": true
+                    },
+                    {
+                      "key": "limit",
+                      "value": "10",
+                      "disabled": true
+                    },
+                    {
+                      "key": "parentOrderId",
+                      "value": null,
+                      "disabled": true
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "82b20479-0a00-4530-9df9-33e3fd894a85"
+        }
+      ],
+      "id": "f275e2d3-c778-4ca6-be71-fdcd983d02dd"
+    },
+    {
+      "name": "Firebase",
+      "item": [
+        {
+          "name": "AuthTokenValidation",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "const responseJson = pm.response.json()",
+                  "var bodyToken = responseJson.idToken;",
+                  " pm.environment.set(\"token\", bodyToken)"
+                ]
+              }
+            }
+          ],
+          "id": "1f4e560c-e60d-4856-8400-e19d8ef712ed",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\"email\": \"simplyrajat11@gmail.com\",\n\"password\": \"Test123\",\n\"returnSecureToken\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAQRzHvbBiH7gutkES0ouMH5l1PDUbnqSM",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAQRzHvbBiH7gutkES0ouMH5l1PDUbnqSM"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "CreateUser",
+          "id": "9b56e88a-c167-4557-8f57-ca28690f661c",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\"email\" : \"simplyrajat001@gmail.com\",\n\"password\": \"Test123\",\n\"returnSecureToken\": true\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyAQRzHvbBiH7gutkES0ouMH5l1PDUbnqSM",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signUp"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAQRzHvbBiH7gutkES0ouMH5l1PDUbnqSM"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "304347bf-97ab-4d5c-a0e2-a07f9922f114"
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "19ec920c-29f7-4d72-9d95-5d7065924ea2",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "8a051b37-c94e-4cfe-8c31-8cbceee7532a",
+        "type": "text/javascript",
+        "exec": [
+          "pm.environment.get(\"variable_key\");"
+        ]
+      }
+    }
+  ]
+}
