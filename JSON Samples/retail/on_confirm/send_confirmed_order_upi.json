@@ -1,0 +1,107 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_confirm",
+        "core_version": "0.9.1",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "b2d25f74-3f0e-43e4-8d91-0c75fe788396",
+        "message_id": "7bbf3cb4-828d-4779-b3bb-1b7b70b94957",
+        "timestamp": "2021-12-16T15:19:27.928968Z"
+    },
+    "message": {
+        "order": {
+            "id": "ORDER1",
+            "state": "Active",
+            "provider": {
+                "id": "345345345",
+                "locations": [
+                    {
+                        "id": "gr"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "H-0013",
+                    "quantity": {
+                        "count": 1
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Nirmal",
+                "phone": "9876543210",
+                "address": {
+                    "door": "Landmark",
+                    "building": "Test Building",
+                    "street": "Test Address",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560078"
+                },
+                "email": "customer@mail.com"
+            },
+            "fulfillment": {
+                "type": "HOME-DELIVERY",
+                "provider_id": "dunzo",
+                "state": {
+                    "descriptor": {
+                        "name": "Searching for agents",
+                        "code": "SEARCHING-FOR-FMD-AGENT"
+                    }
+                },
+                "start": {
+                    "location": {
+                        "id": "el",
+                        "descriptor": {
+                            "name": "Grocery Retail",
+                            "short_desc": "Grocery Retail Product.",
+                            "images": [
+                                "https://bpp1.beckn.org/pub/media/beckn/provider/logo/default/shoes_men.jpg"
+                            ]
+                        },
+                        "gps": "12.891704, 77.576873"
+                    },
+                    "contact": {
+                        "phone": "supportbpp1@nomail.com",
+                        "email": "+919999999999"
+                    }
+                },
+                "end": {
+                    "location": {
+                        "gps": "12.9063433,77.5856825",
+                        "address": {
+                            "door": "Landmark",
+                            "building": "Test Building",
+                            "street": "Test Address",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560078"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9876543210",
+                        "email": "customer@mail.com"
+                    }
+                }
+            },
+            "payment": {
+                "params": {
+                    "transaction_status": "completed",
+                    "amount": "287",
+                    "currency": "INR",
+                    "vpa": "user@bank",
+                    "transaction_type": "UPI",
+                    "transaction_id": "b2d25f89-3f0e-43h4-8d91-0c75fe9656"
+                },
+                "type": "ON-ORDER",
+                "status": "PAID"
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.1",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "bcbf3463-94ff-4993-8995-c40f0c5501c2",
+        "message_id": "8eaaac4c-6137-4d06-91e1-59bdf2896064",
+        "timestamp": "2021-12-16T14:51:41.645506Z"
+    },
+    "message": {
+        "intent": {
+            "fulfillment": {
+                "end": {
+                    "location": {
+                        "gps": "12.9063433,77.5856825"
+                    }
+                }
+            },
+            "provider": {
+                "descriptor": {
+                    "name": "Good Stores"
+                }
+            }
+        }
+    }
+}

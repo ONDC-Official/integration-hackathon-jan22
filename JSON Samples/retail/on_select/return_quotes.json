@@ -1,0 +1,106 @@
+{
+    "context": {
+        "domain": "nic2021:52110",
+        "country": "IND",
+        "city": "std:8080",
+        "action": "on_select",
+        "core_version": "0.9.3",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "bcbf3463-94ff-4993-8995-c40f0c5501c2",
+        "message_id": "158febc8-09b9-400a-94db-94ff7acd84a6",
+        "timestamp": "2021-12-16T14:54:09Z",
+        "bpp_id": "bpp1.beckn.org",
+        "bpp_uri": "https://bpp1.beckn.org/rest/V1/beckn/"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "453678",
+                "descriptor": {
+                    "name": "Grocery Retail",
+                    "short_desc": "Grocery Retail Product.",
+                    "images": [
+                        "https://bpp1.beckn.org/pub/media/beckn/provider/logo/default/shoes_men.jpg"
+                    ]
+                },
+                "locations": [
+                    {
+                        "id": "el",
+                        "gps": "12.891704, 77.576873",
+                        "address": {
+                            "door": "",
+                            "name": "Address Name",
+                            "building": "West side",
+                            "street": "lsts 354537",
+                            "locality": "",
+                            "state": "Bangalore",
+                            "country": "IND",
+                            "area_code": "160002"
+                        },
+                        "station_code": "160002",
+                        "city": {
+                            "name": "Bangalore",
+                            "code": "Bangalore"
+                        },
+                        "country": {
+                            "name": "IND",
+                            "code": "IN"
+                        }
+                    }
+                ]
+            },
+            "provider_location": {
+                "id": "el"
+            },
+            "items": [
+                {
+                    "id": "G-0007",
+                    "price": {
+                        "currency": "INR",
+                        "value": 72
+                    },
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    }
+                },
+                {
+                    "id": "G-0007-1",
+                    "price": {
+                        "currency": "INR",
+                        "value": 100
+                    },
+                    "quantity": {
+                        "selected": {
+                            "count": 2
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": 272
+                },
+                "breakup": [
+                    {
+                        "title": "G Fresh Raw Banana",
+                        "price": {
+                            "currency": "INR",
+                            "value": 72
+                        }
+                    },
+                    {
+                        "title": "G Fresh Ripe Banana",
+                        "price": {
+                            "currency": "INR",
+                            "value": 200
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

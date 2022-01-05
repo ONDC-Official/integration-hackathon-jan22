@@ -1,0 +1,21 @@
+{
+    "context": {
+        "domain": "delivery",
+        "country": "string",
+        "city": "string",
+        "action": "track",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-06-23T08:29:27.933Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "order_id": "ORDER1"
+    }
+}

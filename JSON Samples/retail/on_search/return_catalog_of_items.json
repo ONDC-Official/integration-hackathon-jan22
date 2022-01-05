@@ -1,0 +1,123 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_search",
+        "core_version": "0.9.3-draft",
+        "bap_id": "bap.com",
+        "bap_uri": "https://bap.com/beckn",
+        "bpp_id": "bpp.com",
+        "bpp_uri": "https://bpp.com/beckn",
+        "transaction_id": "example_transaction_id",
+        "message_id": "example_message_id",
+        "timestamp": "2021-06-23T07:59:13.950Z"
+    },
+    "message": {
+        "catalog": {
+            "bpp/descriptor": {
+                "name": "Shop EZ"
+            },
+            "bpp/providers": [
+                {
+                    "id": "pooja_stores",
+                    "descriptor": {
+                        "name": "Pooja Stores"
+                    },
+                    "locations": [
+                        {
+                            "id": "pooja_stores_location",
+                            "gps": "12.9349377,77.6055586"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "item_1",
+                            "descriptor": {
+                                "name": "Brown Bread 400 gm"
+                            },
+                            "location_id": "pooja_stores_location",
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            },
+                            "category_id": "groceries",
+                            "matched": true
+                        },
+                        {
+                            "id": "item_2",
+                            "descriptor": {
+                                "name": "Good Life Toned Milk 1L"
+                            },
+                            "location_id": "pooja_stores_location",
+                            "price": {
+                                "currency": "INR",
+                                "value": "60"
+                            },
+                            "category_id": "groceries",
+                            "matched": true
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "groceries",
+                            "descriptor": {
+                                "name": "Groceries"
+                            }
+                        }
+                    ],
+                    "exp": "2021-06-23T09:53:38.873Z"
+                },
+                {
+                    "id": "food_mall",
+                    "descriptor": {
+                        "name": "Food Mall"
+                    },
+                    "locations": [
+                        {
+                            "id": "food_mall_location",
+                            "gps": "12.9349377,77.6055586"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "bread_400g",
+                            "descriptor": {
+                                "name": "Brown Bread 400 gm"
+                            },
+                            "location_id": "food_mall_location",
+                            "price": {
+                                "currency": "INR",
+                                "value": "40"
+                            },
+                            "category_id": "food",
+                            "matched": true
+                        },
+                        {
+                            "id": "gl_milk",
+                            "descriptor": {
+                                "name": "Good Life Toned Milk 1L"
+                            },
+                            "location_id": "food_mall_location",
+                            "price": {
+                                "currency": "INR",
+                                "value": "60"
+                            },
+                            "category_id": "food",
+                            "matched": true
+                        }
+                    ],
+                    "categories": [
+                        {
+                            "id": "food",
+                            "descriptor": {
+                                "name": "Food"
+                            }
+                        }
+                    ],
+                    "exp": "2021-06-23T09:53:38.873Z"
+                }
+            ]
+        }
+    }
+}

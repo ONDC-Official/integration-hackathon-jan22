@@ -1,0 +1,32 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "search",
+        "core_version": "0.9.3-draft",
+        "bap_id": "bap.com",
+        "bap_uri": "https://bap.com/beckn",
+        "bpp_id": "bpp.com",
+        "bpp_uri": "https://bpp.com/beckn",
+        "transaction_id": "example_transaction_id",
+        "message_id": "example_message_id",
+        "timestamp": "2021-06-23T07:59:13.950Z"
+    },
+    "message": {
+        "intent" : {
+            "category": {
+                "descriptor" : {
+                    "name" : "Groceries"
+                }
+            },
+            "fulfillment": {
+                "end" : {
+                    "location" : {
+                        "gps" : "12.4535445,77.9283792"
+                    }
+                }
+            }
+        }
+    }
+}

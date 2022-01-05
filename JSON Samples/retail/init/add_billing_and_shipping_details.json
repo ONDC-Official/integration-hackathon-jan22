@@ -1,0 +1,76 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "init",
+        "core_version": "0.9.1",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "bcbf3463-94ff-4993-8995-c40f0c5501c2",
+        "message_id": "1b0dacb5-57f9-46a3-a583-a937e46b39f6",
+        "timestamp": "2021-12-16T14:57:22.213256Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "453678",
+                "locations": [
+                    {
+                        "id": "el"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "G-0007",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "G-0007-1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ],
+            "billing": {
+                "name": "Nirmal",
+                "phone": "9876543210",
+                "address": {
+                    "door": "Landmark",
+                    "building": "Test Building",
+                    "street": "Test Address",
+                    "city": "Bengaluru",
+                    "state": "Karnataka",
+                    "country": "IND",
+                    "area_code": "560078"
+                },
+                "email": "customer@test.com"
+            },
+            "fulfillment": {
+                "type": "HOME-DELIVERY",
+                "tracking": true,
+                "end": {
+                    "location": {
+                        "gps": "12.9063433,77.5856825",
+                        "address": {
+                            "door": "Landmark",
+                            "building": "Test Building",
+                            "street": "Test Address",
+                            "city": "Bengaluru",
+                            "state": "Karnataka",
+                            "country": "IND",
+                            "area_code": "560078"
+                        }
+                    },
+                    "contact": {
+                        "phone": "9876543210",
+                        "email": "customer@test.com"
+                    }
+                }
+            }
+        }
+    }
+}

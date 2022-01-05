@@ -1,0 +1,40 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "select",
+        "core_version": "0.9.1",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "bcbf3463-94ff-4993-8995-c40f0c5501c2",
+        "message_id": "158febc8-09b9-400a-94db-94ff7acd84a6",
+        "timestamp": "2021-12-16T14:54:08.656011Z"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "453678",
+                "locations": [
+                    {
+                        "id": "el"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "G-0007",
+                    "quantity": {
+                        "count": 1
+                    }
+                },
+                {
+                    "id": "G-0007-1",
+                    "quantity": {
+                        "count": 2
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "context": {
+        "domain": "nic2004:52110",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_confirm",
+        "core_version": "0.9.1",
+        "bap_id": "box.beckn.org",
+        "bap_uri": "https://qa.api.box.beckn.org/bap/protocol/v1",
+        "transaction_id": "b2d25f74-3f0e-43e4-8d91-0c75fe788396",
+        "message_id": "7bbf3cb4-828d-4779-b3bb-1b7b70b94957",
+        "timestamp": "2021-12-16T15:19:27.928968Z"
+    },
+    "error": {
+        "type": "DOMAIN-ERROR",
+        "code": "40000",
+        "message": "Payment not received"
+      }   
+}

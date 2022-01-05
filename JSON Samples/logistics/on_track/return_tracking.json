@@ -1,0 +1,25 @@
+{
+    "context": {
+        "domain": "delivery",
+        "country": "string",
+        "city": "string",
+        "action": "on_track",
+        "core_version": "string",
+        "bap_id": "string",
+        "bap_uri": "string",
+        "bpp_id": "string",
+        "bpp_uri": "string",
+        "transaction_id": "string",
+        "message_id": "string",
+        "timestamp": "2021-06-23T08:31:04.045Z",
+        "key": "string",
+        "ttl": "string"
+    },
+    "message": {
+        "tracking": {
+            "tl_method": "http/get",
+            "url": "https://track.bpp.com?order_id=0f8c1e68-c041-427d-9ef4-d4d3e5b22ef9",
+            "status": "active"
+        }
+    }
+}
