@@ -3,7 +3,7 @@
 For all v2 Api and few v1 endpoints which are Address, Billings, Account Details and Orders(Order History) we need to pass bearer token in Authorization
 
 
-To generate token in postman we have an api in Firebase folder in which v2-AuthToken Validation , we have to pass valid email , password , returnSecureToken which will return token and store globally in postman and applied to all the required APIs
+To generate token in postman we have APIs in Firebase folder in which under CreateUser, we can create a new user and using the same credentials (username, password), we have to trigger AuthTokenValidation API, which will return token and store it globally in Postman and applied to all the required APIs
 
   
  <details><summary>
