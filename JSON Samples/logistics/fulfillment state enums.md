@@ -1,6 +1,6 @@
 ### Values used for fulfillment state
 
-The following values will be sent by the logistics BPP in `message.fulfillment.state.descriptor.code`
+The following values will be sent by the logistics BPP in `message.order.fulfillment.state.descriptor.code`
 
 - "SEARCHING-FOR-FMD-AGENT"
 - "ASSIGNED-AGENT"
