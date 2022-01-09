@@ -4,7 +4,7 @@ For all v2 Api and few v1 endpoints which are Address, Billings, Account Details
 
 
 To generate token in postman we have APIs in Firebase folder in which under CreateUser, we can create a new user and using the same credentials (username, password), we have to trigger AuthTokenValidation API, which will return token and store it globally in Postman and applied to all the required APIs
-
+ 
   
  <details><summary>
 Search, On_Search APIs need to be checked for postman for, searching for an item by delivery location:
